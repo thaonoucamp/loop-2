@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check number is Even</title>
+</head>
+<body>
+<script>
+    function checkEven(number) {
+         if (number % 2 == 0) {
+            return true;
+             return false;
+        }
+    }
+    function printEven(n) {
+        let count = 0;
+        for (number = 1; count < n; number++) {
+            if(checkEven(number)) {
+                document.write(number+"<br>");
+            }
+        }
+    }
+    printEven(20);
+</script>
+</body>
+</html>

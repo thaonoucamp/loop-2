@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   function isPrime(n) {
+       if(n<2) {
+           return false;
+       }
+       for (let i = 2; i < n; i++) {
+       if(n % i == 0) {
+           return false;
+       }
+       } return true;
+       }
+   function printPrime(number) {
+       let count = 0;
+       for (let n = 1; count < number; n++) {
+           if(isPrime(n)) {
+               count++;
+               document.write(n + " ");
+           }
+
+       }
+   }
+   printPrime(20);
+
+</script>
+
+
+</body>
+</html>
